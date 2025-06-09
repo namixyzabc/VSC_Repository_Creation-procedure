@@ -1,4 +1,26 @@
-GitHubで作成したリポジトリに、VSCodeで作成済みのコードをプッシュする手順を詳しく解説します。
+---
+
+## 📝 完全なコマンド例
+
+```bash
+# 1. リポジトリ初期化
+git init
+
+# 2. リモートリポジトリ追加
+git remote add origin https://github.com/username/repository.git
+
+# 3. すべてのファイルをステージング
+git add .
+
+# 4. 初回コミット
+git commit -m "Initial commit"
+
+# 5. メインブランチに名前変更（必要に応じて）
+git branch -M main
+
+# 6. プッシュ
+git push -u origin main
+```
 
 ## 🚀 全体の流れ
 
@@ -141,28 +163,6 @@ git push -u origin main
 - GitHubのPersonal Access Tokenを使用
 - またはSSH鍵を設定
 
----
 
-## 📝 完全なコマンド例
-
-```bash
-# 1. リポジトリ初期化
-git init
-
-# 2. リモートリポジトリ追加
-git remote add origin https://github.com/username/repository.git
-
-# 3. すべてのファイルをステージング
-git add .
-
-# 4. 初回コミット
-git commit -m "Initial commit"
-
-# 5. メインブランチに名前変更（必要に応じて）
-git branch -M main
-
-# 6. プッシュ
-git push -u origin main
-```
 
 この手順で、VSCodeで作成したコードを無事GitHubリポジトリにプッシュできます！
